@@ -71,7 +71,5 @@ class Recipe:
             direction_list = []
 
         # Create the datatable to return
-        database = {'Time': time_dict,
-                    'Ingredients': ingredient_list,
-                    'Directions': direction_list}
-        return [title, database]
+        database = [title, time_dict, ingredient_list, direction_list]
+        return database
